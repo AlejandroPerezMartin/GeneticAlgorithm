@@ -51,7 +51,7 @@ public class Main
                 int rand1 = Utils.getRandomInt(0, population - 1);
                 int rand2 = Utils.getRandomInt(0, population - 1);
 
-                if (Math.random() > crossoverProbability)
+                if (Math.random() < crossoverProbability)
                 {
                     Individual[] children = crossover(individuals.get(rand1), individuals.get(rand2));
 
